@@ -7,12 +7,12 @@ import multer from 'multer';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import path from 'path';
-import { fileURLToPath } from 'url';
-import authRoutes from './routes/auth.js';
-import { register } from './controllers/auth.js';
-// import { verifyToken } from './middleware/auth.js';
 import userRoutes from './routes/users.js';
 import postRoutes from './routes/posts.js';
+import authRoutes from './routes/auth.js';
+import { fileURLToPath } from 'url';
+import { register } from './controllers/auth.js';
+import { createPost } from './controllers/posts.js';
 import { verifyToken } from './middleware/auth.js';
 
 // configurations
